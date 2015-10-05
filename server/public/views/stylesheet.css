@@ -1,0 +1,120 @@
+body {
+    background-image: url("http://7428.net/wp-content/uploads/2015/01/3d-Triangle-Geometric-Background-Design-Vector-.jpg");
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 64px;
+    text-align: center;
+    color: #7A5555;
+}
+.todoList {
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+    color: #4F4F4F;
+    display: block;
+    margin: 0 auto;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+.centerText {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+ul{
+    list-style-type:  none ;
+}
+li:hover {
+    color: #a46a51;
+}
+.completeItem-true {
+    text-decoration: line-through;
+    font-style: italic;
+    animation-fill-mode: forwards;
+    color: #553740;
+}
+.addToList {
+    background-color: #fffcd7;
+}
+.addToList:hover {
+    background-color: #f4f3c3;
+}
+.addItemButton {
+    background-color: transparent;
+    color: #5F998C;
+    font-family: 'Bree Serif', serif;
+    font-size:22px;
+    line-height:30px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border:0;
+    width:120px;
+    height:32px;
+    outline: 0;
+}
+.addItemButton:hover {
+    color: white;
+    background-color: #5F998C;
+    outline: 0;
+}
+.remove {
+    background-color:transparent;
+    color: #723e4e;
+    font-family:"Bree Serif", serif;
+    font-size:18px;
+    line-height:30px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    outline: 0;
+    border:0;
+    width:120px;
+    height:32px;
+    margin: 5px;
+}
+.remove:hover {
+    color: white;
+    background-color: #723e4e;
+    outline: 0;
+}
+.yay {
+    background-color:transparent;
+    color: rgba(174, 94, 79, 0.75);
+    font-family:"Bree Serif", serif;
+    font-size:18px;
+    line-height:30px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    outline: 0;
+    border:0;
+    width:120px;
+    height:32px;
+    margin: 5px;
+}
+.yay:hover{
+    color: transparent;
+    height: 405px;
+    width: 700px;
+    background-image: url("https://media.giphy.com/media/9fn7ogiJHmYG4/giphy.gif");
+}
+.fancy-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.fancy-checkbox span:before {
+    /*font-family: "FontAwesome";*/
+    font-style: normal;
+    width: 1em;
+    height: 1em;
+    content: '\f004';
+    margin-right: .3em;
+}
+
+.fancy-checkbox input[type="checkbox"]:checked ~ span:before {
+    content: "\f00c";
+}

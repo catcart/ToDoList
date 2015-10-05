@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todo">
+<head>
+    <meta charset="UTF-8">
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/assets/scripts/app.min.js"></script>
+    <link rel="stylesheet" href="views/stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Nunito|Bree+Serif|Pacifico' rel='stylesheet' type='text/css'>
+
+    <title></title>
+</head>
+<body>
+<div class="todoList" ng-controller="MainController">
+    <h1>My Current To Dos</h1>
+    <div class="centerText">
+        <ul>
+            <li ng-repeat="todo in toDoList">
+                <label class="fancy-checkbox">
+                    <input type="checkbox" ng-model="todo.complete"/>
+                    <span class="completeItem-{{todo.complete}}">{{todo.task}}</span>
+                </label>
+            </li>
+        </ul>
+        <form>
+            <input type="text" class="addToList" ng-model="item"/>
+            <button class="addItemButton" ng-click="addItem()">Add Item</button>
+        </form>
+        <button class="remove" ng-click="removeTask()">Clear</button>
+        <button class="yay">Take A Break</button>
+
+    </div>
+</div>
+</body>
+</html>
